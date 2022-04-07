@@ -1,6 +1,7 @@
 html {
+    background-color: rgb(190, 187, 187);
     font-size: 62.5%;
-    background-image: linear-gradient(to bottom, rgba(111, 195, 221, 0.589), rgb(218, 151, 89));
+    /*background-image: linear-gradient(to bottom, rgba(111, 195, 221, 0.589), rgb(218, 151, 89));*/
 }
 
 /********************************/
