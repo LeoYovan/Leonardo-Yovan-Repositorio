@@ -1,0 +1,133 @@
+
+/**********Encabezado************/
+
+header {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-around;
+    align-items: baseline;
+    height: 15rem;
+    background: url(/imagenes/fondo-logo-naturaleza-montañas.jpg) center center;
+    background-size: cover;
+}
+
+/*************Logo***************/
+
+.logo {
+  font-weight: bolder;
+  font-size: 5rem;
+  -webkit-text-stroke: 1px rgb(209, 141, 13);
+  color: rgb(0, 0, 0);
+  text-align: left;
+  margin-left: 3rem;
+  padding: 1.2rem 0.6rem;  
+  background-color: rgba(124, 124, 124, 0.63);
+  border-radius: 2rem;
+  border: 1px solid rgb(209, 141, 13);
+}
+
+/********Barra de Menu***********/
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+} 
+.menu{
+  display: flex;
+  height: 80px;
+  width: 100%;
+  background: #1b1b1b86;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 50px 0 100px;
+  flex-wrap: wrap;
+  z-index: +1;
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    li {
+        margin: 0 5px;
+        a {
+          color: #f2f2f2;
+          text-decoration: none;
+          font-size: 18px;
+          font-weight: 500;
+          padding: 8px 15px;
+          border-radius: 5px;
+          letter-spacing: 1px;
+          transition: all 0.3s ease;
+        }
+    }
+  }
+}
+.menu .logo{
+  color: rgb(0, 0, 0);
+  font-size: 35px;
+  font-weight: 600;
+}
+
+.menu ul li a.active,
+.menu ul li a:hover{
+  color: #111;
+  background: #fff;
+}
+.menu .menu-btn i{
+  color: #fff;
+  font-size: 22px;
+  cursor: pointer;
+  display: none;
+}
+input[type="checkbox"]{
+  display: none;
+}
+@media (max-width: 1000px){
+    .menu{
+    padding: 0 40px 0 50px;
+  }
+}
+@media (max-width: 920px) {
+    .menu .menu-btn i{
+    display: block;
+  }
+  #click:checked ~ .menu-btn i:before{
+    content: "\f00d";
+  }
+  .menu ul{
+    position: fixed;
+    top: 80px;
+    left: -100%;
+    background: #111;
+    height: 100vh;
+    width: 100%;
+    text-align: center;
+    display: block;
+    transition: all 0.3s ease;
+  }
+  #click:checked ~ ul{
+    left: 0;
+  }
+  .menu ul li{
+    width: 100%;
+    margin: 40px 0;
+  }
+  .menu ul li a{
+    width: 100%;
+    margin-left: -100%;
+    display: block;
+    font-size: 20px;
+    transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  #click:checked ~ ul li a{
+    margin-left: 0px;
+  }
+  .menu ul li a.active,
+  .menu ul li a:hover{
+    background: none;
+    color: cyan;
+  }
+}

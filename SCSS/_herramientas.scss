@@ -1,0 +1,20 @@
+/*****Mixin******/
+
+@mixin font-styles($font-family, $font-size, $color) {
+    font-family: $font-family;
+    font-size: $font-size;
+    color: $color;
+}
+
+/****Maps****/
+
+$contacto: (
+    padding: 0px 5px,
+    text-decoration: none,
+    font-size: 10px,
+    background-color: rgba(124, 124, 124, 0.6),
+    color:  $color-parrafo,
+    width: 25rem,
+    border: 1px solid rgb(177, 167, 33),
+    border-radius: 2rem
+)

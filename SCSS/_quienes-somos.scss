@@ -1,0 +1,40 @@
+
+/****Cuerpo de Quienes Somos*****/
+
+.grid-quienes-somos {
+    display: grid;
+    grid-template-areas: 
+    'articulo1'
+    'articulo2'
+    'articulo3'
+    'boton'
+    'none';
+    grid-gap: 50px;
+    width: 100%;
+}
+
+.articulo1 {
+    grid-area: articulo1;
+    margin-top: 3rem;
+}
+
+.articulo2 {
+    grid-area: articulo2;
+}
+
+.articulo3 {
+    grid-area: articulo3;
+}
+
+.subtitulo-quienes-somos {
+    @extend .subtitulo2;
+    display: inline;
+    margin: 0% 10%;
+}
+
+.parrafo-quienes-somos {
+    @extend .parrafo;
+    margin: 0% 10%;
+    margin-top: 2rem;
+    padding-left: 1rem;
+}

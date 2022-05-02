@@ -1,0 +1,53 @@
+
+/*******Cuerpo de Servicios******/
+
+.grid-servicios {
+    display: grid;
+    grid-template-areas:
+    'descrip descrip'
+    'lista1 lista2'
+    'boton boton'
+    'none none';
+    justify-items: center;
+    grid-gap: 10px;
+    margin: 0% 10%;
+    margin-top: 2rem;
+
+}
+
+.descrip2 {
+    grid-area: descrip;
+}
+
+.lista1 {
+    grid-area: lista1;
+}
+
+.lista2 {
+    grid-area: lista2;
+}
+
+
+@media (max-width: 780px) {
+    .grid-servicios {
+        grid-template-areas: 
+        'descrip'
+        'lista1'
+        'lista2'
+        'boton'
+        'none';
+    }
+}
+
+.lista {
+    width: 350px;
+    font-size: 20px;
+    font-family: $fuente-parrafo;
+    color: $color-parrafo;
+    ul {
+        list-style-type: circle;
+        li {
+            margin: 15px;
+        }
+    }
+}

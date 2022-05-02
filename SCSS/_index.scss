@@ -1,0 +1,113 @@
+
+/********Cuerpo de Index*********/
+
+.grid-container{
+    display: grid;
+    grid-template-areas:
+    'mitad1 mitad2'
+    'boton boton'
+    'none none';
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    margin: 0% 10%;
+}
+
+.mitad1 {
+    grid-area: mitad1;
+}
+
+.mitad2 {
+    grid-area: mitad2;
+}
+
+.boton {
+    grid-area: boton;
+}
+
+@media (max-width: 1300px) {
+    .grid-container {
+        grid-template-areas:
+        'mitad1'
+        'mitad2'
+        'boton'
+        'none';
+    }
+}
+
+@media (max-width: 500px) {
+    .grid-container {
+        margin: 0%;
+    }
+}
+
+main section {
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: wrap; 
+    margin: 0px 20px;
+}
+
+main section img {
+    border-radius: 20px;
+}
+
+.titulo {
+    @include font-styles($fuente-titulo, $tamaño-fuente-6, $color-titulo);
+    -webkit-text-stroke: 0.1px black;
+    margin-left: 1rem;
+}
+
+.subtitulo {
+    @include font-styles($fuente-subtitulos, $tamaño-fuente-4, $color-subtitulo);
+    margin-left: 1rem;
+}
+
+.subtitulo2 {
+    @include font-styles($fuente-subtitulos2, $tamaño-fuente-4, $color-titulo);
+    margin-left: 1rem;
+    -webkit-text-stroke: 0.1px black;
+}
+
+.parrafo {
+    @include font-styles($fuente-parrafo, $tamaño-fuente-2, $color-parrafo);
+    margin: 1rem 2rem;
+    padding-bottom: 1rem;
+    text-align: justify;
+}
+
+@media (max-width: 500px) {
+    .titulo {
+        font-size: $tam-fuente-mob-3;
+        margin-left: 1rem;
+    }
+    .subtitulo {
+        font-size: $tam-fuente-mob-2;
+        margin-left: 1rem;
+    }
+    .subtitulo2 {
+        font-size: $tam-fuente-mob-2;
+    }
+    .parrafo {
+        font-size: $tam-fuente-mob-1;
+    }
+}
+
+main article {
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center; 
+    margin: 0px 15px;
+}
+
+main nav {
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    height: 60px;
+    background: #1b1b1b86;
+    width: 100%;
+
+}

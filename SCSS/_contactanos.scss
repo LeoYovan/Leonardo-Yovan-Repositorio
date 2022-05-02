@@ -1,0 +1,58 @@
+/******Cuerpo de Contactanos******/
+
+form {
+    width: 450px;
+    margin: 60px auto;
+    padding: 10px 20px;
+    background: rgba(0,0,0,0.4);
+    box-sizing: border-box;
+    border-radius: 10px;
+    font-size: 20px;
+    font-family: $fuente-subtitulos2;
+}
+
+.titulo-form {
+    color: $color-titulo;
+    font-family: $fuente-subtitulos2;
+    font-size: 40px;
+    text-align: center;
+    -webkit-text-stroke: 0.1px black;
+}
+
+.parrafo-form {
+    color: $color-subtitulo;
+    font-family: $fuente-parrafo;
+    font-size: 20px;
+    text-align: justify;
+    margin: 10px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+textarea{
+    min-height: 100px;
+    max-height: 200px;
+    max-width: 100%;
+    min-width: 100%;
+}
+
+div input {
+    width: 49%;
+    border-radius: 0px;
+    background-color: $color-subtitulo;
+}
+
+div input:hover {
+    cursor: pointer;
+}
+
+
+@media (max-width: 480px) {
+    form {
+        width: 100%;
+    }
+}

@@ -1,0 +1,36 @@
+.boton-contacto {
+    text-decoration: none;
+    font-size: 30px;
+    font-family: $fuente-titulo;
+    border: 3px dashed black;
+    border-radius: 2rem;
+    padding: 0px 5px;
+    animation-name: boton-contacto;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+    animation-duration: 4s;
+    animation-delay: 0s;
+}
+
+@keyframes boton-contacto {
+    0% {
+        color: red;
+        border: 3px dashed red;
+    }
+    25% {
+        color: green;
+        border: 3px dashed green;
+    }
+    50% {
+        color: blue;
+        border: 3px dashed blue;
+    }
+    75% {
+        color: blueviolet;
+        border: 3px dashed blueviolet;
+    }
+    100% {
+        color: red;
+        border: 3px dashed red;
+    }
+}
